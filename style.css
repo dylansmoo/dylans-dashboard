@@ -1,0 +1,159 @@
+/* Basic styles for layout */
+body {
+  font-family: Inter, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial;
+  padding: 2rem;
+  background: #dadcd4;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #1f2937
+}
+
+
+
+input, button, select {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+body.dark {
+  background: #141d24;
+  color: #ffffff;
+}
+
+
+.header-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #1F2937
+}
+
+.dark .header-container {
+  color: #dadcd4;
+}
+
+.quote-container{
+  /* display: flex;
+  justify-content: center; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.dark .quote-container{
+   color: #dadcd4;
+}
+
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.theme-button{
+  border: 1px solid #E5E7EB;
+  border-radius: 15px;
+  background-color: #1b2028;
+  margin: 0;
+  height: 40px;
+  
+}
+
+.dark .theme-button { 
+   background-color: #dadcd4;
+}
+input {
+  padding: 0.5rem;
+  width: 200px;
+  margin-right: 0.5rem;
+}
+
+.widget-box {
+  border: 1px solid #E5E7EB;
+  border-radius: 15px;
+  padding: 25px;
+  width: 400px;
+  background-color: #ffffff;
+  color: #1F2937
+}
+
+
+.dark .widget-box {
+  color: #dadcd4;
+  background-color: #141d24;
+  border: 1px solid #2f373d;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* ol {
+  list-style-type: lower-roman;
+} */
+
+.strikethrough {
+  text-decoration: line-through;
+  color: gray
+}
+
+.removeBtn {
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  padding-top: 10px;
+}
+
+.dark .removeBtn {
+  color: #dadcd4
+}
+
+.removeBtn:hover{
+  color: grey;
+}
+
+.dashboard {
+  max-width: 1000px;
+  margin: 0 auto 48px;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+
+    /* gap: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column; */
+}
+
+.createdList {
+   display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 16px;
+}
+
+.createdList input[type="checkbox"] {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+}
+
+/* .api-container{
+  display: flex;
+  justify-content: space-evenly;
+} */
+/* 
+.contents-container{
+  border: 1px solid black
+} */

@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dylan's Dashboard</title>
-</head>
-<body>
+    <div class="title-container">
+        <title class="title">Dylan's Dashboard</title>
+    </div>
     
+    <link rel="stylesheet" href="style.css">
+</head>
+<nav>
+    <!-- <div id="nav-container"> 
+        <a href="">ToDo List</a>
+        <a href="">Shopping List</a>
+        <a href="">Gratitude</a>
+        <a href="">Quote</a>
+        <a href="">Weather</a>
+        <a href="">Calendar</a>
+    </div> -->
+</nav>
+<body>
+     <main id="app" roll="main">
+    
+    <section class="header-container" >
+        <h1>DYLAN'S DAILY FLOW</h1>  
+        <button id="toggleThemeBtn" type="button" aria-pressed="false" class="theme-button">
+        <span id="themeIcon" aria-hidden="true">☀️</span>
+        <span class="btn-text"></span>
+      </button>
+    </section>
+    
+      <section id="motivational-quote-container">
+            <div class="quote-container">
+                <h4 id="quote-text"></h4>
+            </div>
+
+    <!-- <section id="calendar-container">
+        <div>
+            <h2>CALENDAR</h2>
+        </div>
+    </section> -->
+            
+      
+
+    
+    <div class="dashboard">
+        
+        <section id="weather-container" class="widget-box">
+            <div>
+                <h2>WEATHER</h2>
+                <p id="city"></p>
+                <p id="highLow"></p>
+                <!-- <input type="text" name="" id=""cityInput placeholder="Location"> -->
+                <p id="temperature"></p>
+                <p id="condition"></p>
+                <img id="icon"/>
+        </section>
+         <section id="daily-gratitude-container" class="widget-box">
+            <div>
+                <h2>GRATITUDE</h2>
+                <input type="text" name="" id="gratitudeInput" placeholder="Add an item">
+                <button id="gratitudeAddBtn">+</button>
+                <ol id="gratitudeList">
+                </ol>
+            </div>
+        </section>
+
+        <section id="todo-list-container" class="widget-box">
+            <div>
+                <h2>TO-DO LIST</h2>
+                <input type="text" name="" id="toDoInput" placeholder="Add a task">
+                <button id="toDoAddBtn">+</button>
+                <ul id="toDoListUL">
+                </ul>
+            </div>
+        </section>
+
+        <section id="shopping-list-container" class="widget-box">
+            <div>
+                <h2>SHOPPING LIST</h2>
+                <input type="text" name="" id="shoppingListInput" placeholder="Add an item">
+                <button id="shopAddBtn">+</button>
+                <ul id="shoppingList">
+                </ul>
+            </div>
+        </section>
+       
+        <!-- <section id="habit-tracker-container" class="widget-box">
+            <div>
+                <h2>HABIT TRACKER</h2>
+                <input type="text" name="" id="gratitudeInput" placeholder="Add a habit">
+                <button id="habitAddBtn">+</button>
+            </div>
+        </section> -->
+    </div>
+
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
