@@ -1,4 +1,7 @@
-/* Basic styles for layout */
+
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; overflow-x: hidden; }
+
 body {
   font-family: Inter, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial;
   padding: 2rem;
@@ -10,7 +13,6 @@ body {
   gap: 16px;
   color: #1f2937
 }
-
 
 
 input, button, select {
@@ -63,6 +65,13 @@ button {
   
 }
 
+@media (max-width: 600px) {
+  .theme-button {
+    padding: 10px;        /* gives breathing room around icon */
+    margin-right: 8px;    /* if it’s touching the edge */
+  }
+}
+
 .dark .theme-button { 
    background-color: #dadcd4;
 }
@@ -103,8 +112,6 @@ input {
 }
 
 
-
-
 .dark .widget-box {
   color: #dadcd4;
   background-color: #141d24;
@@ -117,6 +124,14 @@ input {
   margin: 0;
   height: 36px;
 }
+
+
+@media (max-width: 600px) {
+  .addBtn{
+    max-height: 33px;
+  }
+}
+
 
 ul {
   list-style-type: none;
