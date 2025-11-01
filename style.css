@@ -72,20 +72,50 @@ input {
   margin-right: 0.5rem;
 }
 
+
+
 .widget-box {
-  border: 1px solid #E5E7EB;
-  border-radius: 15px;
+  flex: 1 1 450px;         
+  min-width: 280px;
   padding: 25px;
   width: 400px;
+  border: 1px solid #E5E7EB;
+  border-radius: 15px;
   background-color: #ffffff;
   color: #1F2937
 }
+
+@media (max-width: 1000px) {
+  .widget-box {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .widget-box {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+
 
 
 .dark .widget-box {
   color: #dadcd4;
   background-color: #141d24;
   border: 1px solid #2f373d;
+}
+
+.addBtn {
+  border: 1px solid #4c5054;
+  border-radius: 5px;
+  margin: 0;
+  height: 36px;
 }
 
 ul {
@@ -119,20 +149,7 @@ ul {
   color: grey;
 }
 
-.dashboard {
-  max-width: 1000px;
-  margin: 0 auto 48px;
-  padding: 0 16px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 14px;
 
-    /* gap: 50px;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column; */
-}
 
 .createdList {
    display: flex;
@@ -157,3 +174,19 @@ ul {
 .contents-container{
   border: 1px solid black
 } */
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto 48px;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  justify-content: center;
+  gap: 14px;
+
+    /* gap: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column; */
+}
