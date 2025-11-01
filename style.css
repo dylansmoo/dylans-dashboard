@@ -126,11 +126,11 @@ input {
 }
 
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .addBtn{
     max-height: 33px;
   }
-}
+} */
 
 
 ul {
