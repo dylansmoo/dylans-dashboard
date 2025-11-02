@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <div class="title-container">
+        <title class="title">Dylan's Dashboard</title>
+    </div>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <main id="app" roll="main">
     
+    <section class="header-container" >
+        <h1>Contact me</h1>  
+        <button id="toggleThemeBtn" type="button" aria-pressed="false" class="theme-button">
+        <span id="themeIcon" aria-hidden="true">☀️</span>
+        <span class="btn-text"></span>
+      </button>
+    </section>
+    <h4>Get in touch with me here.</h4>
+    <form id="contactForm" class="contactForm">
+        <input type="text" id="name" placeholder="Your name*">
+        <input type="text" id="email" placeholder="Your email*">
+        <textarea name="" id="message" placeholder="Your message*"></textarea>
+        <button id="submit">Send</button>
+    </form>
+
+    <p id="status"></p>
+
+    <footer>
+        <nav><a href="index.html">Dylan's Dashboard</a></nav>
+    </footer>
+
+    <script src="contact-form.js"></script>
 </body>
 </html>
