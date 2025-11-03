@@ -65,7 +65,20 @@ toggleBtn.addEventListener("click", () => {
   themeIcon.textContent = currTheme === "dark" ? "☀️" : "🌙";
 });
 
+// date
+const date = document.getElementById("date")
 
+const today = new Date()
+
+const options = { 
+  weekday: 'long',   // "Tuesday"
+  month: 'long',     // "November"
+  day: 'numeric',    // "3"
+  year: 'numeric'    // "2025"
+};
+const formattedDate = today.toLocaleDateString('en-US', options);
+
+date.textContent = formattedDate
 // weather API
 
 async function getWeather() {
